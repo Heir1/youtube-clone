@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Siderbar/Sidebar';
 import { HomeScreen } from './screens/homeScreen/HomeScreen';
+import LoginScreen from './screens/loginscreen/LoginScreen';
 import './_app.scss';
 
 
@@ -18,19 +19,20 @@ const App = () =>{
     // border border-warning
 
     return (
-        <>
-            <Header handleToggleSidebar={handleToggleSidebar} />
+        // <>
+        //     <Header handleToggleSidebar={handleToggleSidebar} />
             
-            <div className='app__container'>
-                <Sidebar 
-                    sidebar={sidebar} 
-                    handleToggleSidebar={handleToggleSidebar} 
-                />
-                <Container fluid className='app__main' >
-                    <HomeScreen/>
-                </Container>
-            </div>       
-        </>
+        //     <div className='app__container'>
+        //         <Sidebar 
+        //             sidebar={sidebar} 
+        //             handleToggleSidebar={handleToggleSidebar} 
+        //         />
+        //         <Container fluid className='app__main' >
+        //             <HomeScreen/>
+        //         </Container>
+        //     </div>       
+        // </>
+        <LoginScreen/>
     )
 }
 
